@@ -1,5 +1,6 @@
 package com.example.autotests_docker.service;
 
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.example.autotests_docker.model.Chat;
@@ -10,6 +11,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
+@Service
 @RequiredArgsConstructor
 public class JpaTgChatService implements TgChatService {
     private final JpaChatRepository chatRepository;

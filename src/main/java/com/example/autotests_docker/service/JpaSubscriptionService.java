@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Service;
+
 import com.example.autotests_docker.model.Chat;
 import com.example.autotests_docker.model.Link;
 import com.example.autotests_docker.repository.JpaChatRepository;
@@ -13,6 +15,7 @@ import com.example.autotests_docker.repository.JpaLinkRepository;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
+@Service
 public class JpaSubscriptionService {
     private final JpaLinkRepository linkRepository;
     private final JpaChatRepository chatRepository;
